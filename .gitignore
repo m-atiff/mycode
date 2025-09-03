@@ -1,0 +1,50 @@
+# Terraform working dirs
+**/.terraform/*
+
+# State & crash
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Local vars (often secrets) — keep only example files in git
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Plans / artifacts
+*.tfplan
+*.plan
+plan.out
+
+# Local-only overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terragrunt
+.terragrunt-cache/
+
+# Env files
+.env
+.envrc
+.direnv/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*~
+.history/
+
+# Keys/certs (belt-and-suspenders)
+*.pem
+*.key
+*.p12
+*.crt
+
